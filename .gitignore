@@ -1,0 +1,50 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Output of the Go compiler
+bin/
+build/
+
+# IDE files
+.vscode/
+.idea/
+
+# Go workspace
+Godeps/
+vendor/
+
+# Logs
+*.log
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# OS generated files
+.DS_Store
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Git
+.git
+.gitignore
+
+# Docker
+.dockerignore
+Dockerfile
+
+# Tests
+*.out
+*.test
+testdata/
+
+# Go workspace file
+go.work
+go.work.sum
