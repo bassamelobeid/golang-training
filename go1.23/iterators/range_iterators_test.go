@@ -12,6 +12,11 @@ type CanWatchDeadpoolPerson struct {
 	Age  int
 }
 
+// The range clause in a for-range loop accepts any of the following function types:
+// func(func() bool)
+// func(func(K) bool)
+// func(func(K, V) bool)
+
 func TestRangeIteration(t *testing.T) {
 	var m sync.Map
 
@@ -85,8 +90,8 @@ func TestMovieRatingsIteration(t *testing.T) {
 
 	m.Store("Star Wars: Revenge of the Sith", 999)
 	m.Store("Lord of the Rings", 10)
-	m.Store("Game of Thrones", 8)
-	m.Store("Harry Potter", 7)
+	m.Store("Harry Potter", 8)
+	m.Store("Game of Thrones", 7)
 
 	var epicMovies []EpicMovie
 

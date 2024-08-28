@@ -15,8 +15,17 @@ func TestAllMapIterator(t *testing.T) {
 	}
 
 	expected := []string{"a:1", "b:2", "c:3"}
-	if !compareSlices(keyValuePairs, expected) {
-		t.Errorf("Expected %v, but got %v", expected, keyValuePairs)
+	for _, exp := range expected {
+		found := false
+		for _, kv := range keyValuePairs {
+			if kv == exp {
+				found = true
+				break
+			}
+		}
+		if !found {
+			t.Errorf("Expected %v to be in the list, but it was not found", exp)
+		}
 	}
 }
 

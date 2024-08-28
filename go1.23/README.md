@@ -4,12 +4,12 @@ This folder contains examples and tests demonstrating the new features and chang
 
 ## Contents
 
-1. [Canonical Values](#canonical-values)
-2. [Iterators](#iterators)
-3. [Timer Changes](#timer-changes)
-4. [HTTP Cookies](#http-cookies)
-5. [OS Operations](#os-operations)
-6. [Slice Operations](#slice-operations)
+1. [Iterators](#iterators)
+2. [Canonical Values](#canonical-values)
+3. [Slice Operations](#slice-operations)
+4. [Timer Changes](#timer-changes)
+5. [HTTP Cookies](#http-cookies)
+6. [OS Operations](#os-operations)
 7. [Atomic Operations](#atomic-operations)
 8. [Tooling and Runtime](#tooling-and-runtime)
 9. [Other stdlib changes](#other-stdlib-changes)
