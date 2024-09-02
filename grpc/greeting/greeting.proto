@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option go_package = "github.com/bassamelobeid/golang-training/grpc/greeting";
+
+package greeting;
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SendGreeting (Greeting) returns (Response) {}
+}
+
+// The request message
+message Greeting {
+  string message = 1;
+}
+
+// The response message containing the greetings
+message Response {
+  string message = 1;
+}
